@@ -15,10 +15,10 @@ const (
 // Movie struct for the Trakt v2 API
 type Movie struct {
 	IDs struct {
-		Imdb  int `json:"imdb"`
-		Slug  int `json:"slug"`
-		Tmdb  int `json:"tmdb"`
-		Trakt int `json:"trakt"`
+		Imdb  string `json:"imdb"`
+		Slug  string `json:"slug"`
+		Tmdb  int    `json:"tmdb"`
+		Trakt int    `json:"trakt"`
 	} `json:"ids"`
 	Title string `json:"title"`
 	Year  int    `json:"year"`

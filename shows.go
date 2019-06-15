@@ -5,8 +5,8 @@ import "fmt"
 var (
 	ShowURL         = Hyperlink("shows/{traktID}")
 	ShowsPopularURL = Hyperlink("shows/popular")
-	ShowsSearchURL  = Hyperlink("search?query={query}&type=show")
-	ShowsByIDURL    = Hyperlink("search?id_type={id_type}&id={id}&type=show")
+	ShowsSearchURL  = Hyperlink("search/show?query={query}")
+	ShowsByIDURL    = Hyperlink("search/{id_type}/{id}?type=show")
 )
 
 // Create a ShowsService with the base url.URL
